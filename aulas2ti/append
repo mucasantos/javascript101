@@ -30,4 +30,6 @@ botaoAdd.addEventListener("click", ()=>{
     
 });
 
+<ol id= 'linhas'>
+</ol>
 
