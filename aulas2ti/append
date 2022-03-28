@@ -1,0 +1,33 @@
+
+//Criar dois elementos html - Input e Button
+//Quando o usuario clicar, adicionar o nome digitado 
+//na lista de amigos.
+
+
+//Olhem pra casa! Silêncio!!!
+
+/*
+1. Pegar o meu elemento do HTML pelo ID!!!
+2. Ouvir o click do botão
+3. Escrever na tela
+
+*/
+
+let elemento = document.getElementById('amigos');
+let botaoAdd = document.getElementById("addAmigo");
+let escreverTela = document.getElementById("linhas");
+
+
+let listaAmigo = [];
+
+botaoAdd.addEventListener("click", ()=>{
+    //Criar um elemento
+    const node = document.createElement("li");
+    listaAmigo.push(elemento.value);
+    const textnode = document.createTextNode(elemento.value);
+    node.appendChild(textnode);
+    escreverTela.appendChild(node);
+    
+});
+
+
